@@ -1,0 +1,42 @@
+.mainSlider{
+    .carousel-item{
+        height: 450px;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.carousel-caption{
+    top: 25%;
+    bottom: auto;
+    p {
+        text-shadow: 0 3px 9px rgb(0,0,0);
+    }
+}
+
+
+#home-heading, #home-video{
+    height: 200px;
+    background-image: url("../images/lights.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#home-video{
+    background-image: url('../images/media.jpg');
+}
+#home-heading, #home-video{
+    & > ::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,.7);
+    }
+}

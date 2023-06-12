@@ -1,0 +1,66 @@
+.navbar-brand {
+  width: 120px;
+  display: inline-block; }
+  .navbar-brand > img {
+    width: 100%; }
+
+.myNavbar .nav-item .nav-link {
+  text-transform: uppercase; }
+
+li.nav-item.active {
+  border-bottom: 2px solid orange;
+  color: orange; }
+
+.footer {
+  font-size: 18px;
+  background-color: #000; }
+
+.mainSlider .carousel-item {
+  height: 450px; }
+  .mainSlider .carousel-item img {
+    height: 100%;
+    object-fit: cover; }
+
+.carousel-caption {
+  top: 25%;
+  bottom: auto; }
+  .carousel-caption p {
+    text-shadow: 0 3px 9px black; }
+
+#home-heading, #home-video {
+  height: 200px;
+  background-image: url("../images/lights.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative; }
+
+#home-video {
+  background-image: url("../images/media.jpg"); }
+
+#home-heading > ::before, #home-video > ::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.aboutSider .item > p:nth-child(1) {
+  margin: 0 !important; }
+
+.aboutSider .owl-nav {
+  margin-top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25%;
+  display: flex;
+  justify-content: space-between; }
+
+.aboutSider button.owl-prev {
+  transform: translateX(-30%); }
+
+.aboutSider button.owl-next {
+  transform: translateX(30%); }
